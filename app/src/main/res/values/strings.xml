@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyfirstApp</string>
+    <string name="username_hint">用户名</string>
 </resources>

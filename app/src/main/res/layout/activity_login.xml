@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 登录页面 login.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@mipmap/fterglow2">
 
     <LinearLayout
@@ -10,38 +10,46 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@drawable/border_green">
+        android:padding="24dp"
+        android:background="@drawable/bg_rounded_white"
+        android:elevation="8dp">
 
         <EditText
             android:id="@+id/et_username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:hint="用户名"
-            android:textColor="#000000"
+            android:textColor="#2D2D2D"
+            android:textSize="16sp"
             android:inputType="text"
-            android:padding="20dp"
+            android:paddingHorizontal="20dp"
             android:drawableStart="@mipmap/account"
-            android:drawablePadding="20dp"/>
+            android:drawablePadding="16dp"
+            android:background="@drawable/edittext_border_bottom"/>
+
         <EditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
             android:hint="密码"
-            android:textColor="#000000"
+            android:textColor="#2D2D2D"
+            android:textSize="16sp"
             android:inputType="textPassword"
-            android:padding="20dp"
+            android:paddingHorizontal="20dp"
             android:drawableStart="@mipmap/pwd"
-            android:drawablePadding="30dp"/>
+            android:drawablePadding="16dp"
+            android:background="@drawable/edittext_border_bottom"/>
+
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
             android:text="登录"
-            android:backgroundTint="@color/green"
-            android:layout_marginTop="24dp"/>
-
-
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#4CAF50"
+            android:elevation="2dp"/>
     </LinearLayout>
-
 </RelativeLayout>

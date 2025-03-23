@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class BaseActivity extends AppCompatActivity {
     public Context mContext;
-
     @Override
     protected void onChildTitleChanged(Activity childActivity, CharSequence title) {
         super.onChildTitleChanged(childActivity, title);
